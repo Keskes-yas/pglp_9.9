@@ -108,7 +108,7 @@ public class Rectangle implements FormeGeometrique
 
 
 	public String getDessin_Id() {
-		return dessin_id ;
+		return dessin_id;
 	}
 
 }
