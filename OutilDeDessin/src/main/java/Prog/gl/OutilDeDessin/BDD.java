@@ -26,8 +26,8 @@ public class BDD {
 	 /*créer toutes les tables*/
 	public void bddTables() throws SQLException
 	{
-		Statement statement = connection.createStatement();
-		statement.execute("CREATE TABLE IF NOT EXISTS  dessin (nom VARCHAR(50))");
+	    Statement statement = connection.createStatement();
+	    statement.execute("CREATE TABLE IF NOT EXISTS  dessin (nom VARCHAR(50))");
 	    statement.execute("CREATE TABLE IF NOT EXISTS cercle (nom VARCHAR(50), x INT, y INT, rayon INT, dessin_id VARCHAR(50))");
 	    statement.execute("CREATE TABLE IF NOT EXISTS  triangle (nom VARCHAR(50), x1 INT, y1 INT,x2 INT, y2 INT,x3 INT, y3 INT, dessin_id VARCHAR(50))");
 	    statement.execute("CREATE TABLE IF NOT EXISTS rectangle (nom VARCHAR(50), x INT, y INT, a INT, b INT, dessi_id VARCHAR(50))");
